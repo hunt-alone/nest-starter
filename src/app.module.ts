@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { resolve } from 'path';
 import { Module, MiddlewareConsumer, RequestMethod } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
@@ -41,6 +42,16 @@ import { AlbumModule } from './modules/album/album.module';
     UsersModule,
     AlbumModule,
   ],
+=======
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+
+@Module({
+  imports: [],
+  controllers: [AppController],
+  providers: [AppService],
+>>>>>>> parent of f2dcff1... ✨ feature: add controller demo
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {
